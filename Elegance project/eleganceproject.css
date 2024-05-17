@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+/* 
+=================
+Header
+=================
+ */
+
+.header-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(241, 235, 235);
+  position: fixed;
+  height: 55px;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-bottom: 1px solid;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.logo, .website-img {
+  width: 70px;
+  border-radius: 35px;
+  border: none;
+}
+.search-bar {
+  padding: 0.6rem 2rem;
+  border: 2px solid grey;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.search-bar::placeholder {
+  font-size: 13px;
+  font-family: Arial;
+  font-style: italic;
+  text-transform: capitalize;
+  text-shadow: 2px 1px rgb(231, 220, 220);
+  margin: 0;
+}
+.website-img {
+  width: 40px;
+  border-radius: 20px;
+}
+
+/* 
+=================
+Description
+=================
+*/
+main {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.description-container {
+  display: grid;
+  gap: 0.5rem;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.description-content {
+  display: grid;
+  margin-top: 8px;
+  align-items: center;
+  font-size: 14px;
+  padding-left: 20px;
+}
+.description-content p {
+  display: grid;
+  color: grey;
+  align-items: top;
+  margin: 0;
+  position: absolute;
+  left: 60px;
+  font-size: 14px;
+  padding-left: 20px;
+}
+.tag {
+  font-size: 14px;
+  font-family: Arial;
+  text-decoration: none;
+  margin-right: 20px;
+  text-align: justify;
+  margin-left: 51px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+.heading-title {
+  text-align: center;
+  color: rgb(11, 11, 212);
+  text-transform: capitalize;
+}
+.title-img {
+  width: 100%;
+  border: 1px solid grey;
+}
+.heading-para {
+  font-size: 12px;
+  color: grey;
+}
+
+
+.career-header {
+  margin-top: 40px;
+}
+.career-img-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: top;
+}
+.career-img {
+  width: 100%;
+  border: 1px solid rgb(179, 172, 172);
+  border-radius: 6px;
+}
+.career-para {
+  font-size: 12px;
+  color: grey;
+}
+.career-para2 {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 0;
+}
+.career-enrol {
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.5;
+}
+.career-enrol:hover {
+  color: rgb(152, 152, 243);
+}
+.career-btn {
+  font-size: 9px;
+  font-weight: bold;
+  border: 1px solid rgb(150, 142, 142);
+  border-radius: 4px;
+  padding: 6px 12px ;
+  background-color: rgb(22, 22, 196);
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.heading {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+
+.personalize-container {
+  margin-bottom: 40px;
+}
+.personalize-para1 {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 0;
+}
+.personalize-para2 {
+  font-size: 12px;
+  color: grey;
+}
+.personalize-link {
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.5;
+}
+.personalize-link:hover {
+  color: rgb(152, 152, 243);
+}
+
+.nav-page {
+  margin-top: 30px;
+}
+.nav-page a {
+  display: grid;
+  font-size: 10px;
+  text-transform: capitalize;
+  color: gray;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.selection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+.selection p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: grey;
+}
+.reply, .reply-all, .forward {
+  border: 2px solid grey;
+  border-radius: 20px;
+  padding: 6px 0;
+  cursor: pointer;
+}
+
+.page-footer {
+  height: 4rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logo, .page-footer a {
+  text-decoration: none;
+  color: blue;
+}
+
+@media screen and (min-width: 760px) {
+  .career-img-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  .title-img {
+    height: 300px;
+  }
+  .career-img-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title-img {
+    height: 400px;
+  }
+  .career-img-container {
+    grid-template-columns: 1fr 1fr 1fr ifr;
+  }
+}
